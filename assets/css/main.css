@@ -162,8 +162,9 @@ h6 {
   font-size: 24px;
   margin: 0;
   padding-left: 5px;
-  font-weight: 500;
-  color: var(--heading-color);
+  font-weight: 700;
+  /*color: var(--accent-color);*/
+  color: var( --heading-color);
 }
 
 .header .header-social-links {
@@ -693,7 +694,7 @@ section,
 # Hero 3 Section
 --------------------------------------------------------------*/
 .hero-3 {
-  padding-top: 120px;
+  padding-top: 50px;
   position: relative;
   overflow: hidden;
   padding-bottom: 80px;
