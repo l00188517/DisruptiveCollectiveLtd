@@ -1058,123 +1058,27 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Hero image Shape Section
 --------------------------------------------------------------*/
-.hero {
-  padding: 80px 0;
-  position: relative;
-  overflow: hidden;
-}
 
-.hero .content h2 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-}
-
-@media (max-width: 991px) {
-  .hero .content h2 {
-    font-size: 2.5rem;
-  }
-}
-
-.hero .content .lead {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-.hero .cta-buttons {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 3rem;
-}
-
-@media (max-width: 576px) {
-  .hero .cta-buttons {
-    flex-direction: column;
-  }
-}
-
-.hero .cta-buttons .btn {
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-}
-
-.hero .cta-buttons .btn.btn-primary {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-.hero .cta-buttons .btn.btn-primary:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
-  border-color: color-mix(in srgb, var(--accent-color), transparent 15%);
-  transform: translateY(-2px);
-}
-
-.hero .cta-buttons .btn.btn-outline {
-  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 70%);
-  color: var(--accent-color);
-  background: transparent;
-}
-
-.hero .cta-buttons .btn.btn-outline:hover {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  transform: translateY(-2px);
-}
-
-.hero .hero-stats {
-  display: flex;
-  gap: 3rem;
-  margin-top: 2rem;
-}
-
-@media (max-width: 576px) {
-  .hero .hero-stats {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-}
-
-.hero .hero-stats .stat-item .stat-number {
-  display: block;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--heading-color);
-  line-height: 1;
-}
-
-.hero .hero-stats .stat-item .stat-label {
-  font-size: 0.9rem;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin-top: 0.5rem;
-  display: block;
-}
-
-.hero .hero-image {
+.hero-3 .hero-image {
   position: relative;
   padding: 2rem;
 }
 
-.hero .hero-image img {
+.hero-3 .hero-image img {
   position: relative;
   z-index: 2;
 }
 
-.hero .hero-image .shape-1,
-.hero .hero-image .shape-2 {
+.hero-3 .hero-image .shape-1,
+.hero-3 .hero-image .shape-2 {
   position: absolute;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
   z-index: 1;
 }
 
-.hero .hero-image .shape-1 {
+.hero-3 .hero-image .shape-1 {
   width: 300px;
   height: 300px;
   background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
@@ -1183,7 +1087,7 @@ section,
   animation: morphShape 15s linear infinite;
 }
 
-.hero .hero-image .shape-2 {
+.hero-3 .hero-image .shape-2 {
   width: 200px;
   height: 200px;
   background-color: color-mix(in srgb, var(--heading-color), transparent 90%);
@@ -1193,20 +1097,8 @@ section,
 }
 
 @media (max-width: 991px) {
-  .hero {
-    text-align: center;
-    padding: 60px 0;
-  }
 
-  .hero .cta-buttons {
-    justify-content: center;
-  }
-
-  .hero .hero-stats {
-    justify-content: center;
-  }
-
-  .hero .hero-image {
+  .hero-3 .hero-image {
     margin-top: 3rem;
   }
 }
@@ -1923,140 +1815,6 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
-# Services 3 Section
---------------------------------------------------------------*/
-.services-3 .service-item {
-  position: relative;
-  padding: 60px 30px 80px;
-  background-color: var(--surface-color);
-  border-radius: 12px;
-  box-shadow: 0 10px 25px color-mix(in srgb, var(--default-color), transparent 90%);
-  transition: all 0.3s ease;
-}
-
-.services-3 .service-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 6px;
-  background-color: var(--accent-color);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-.services-3 .service-item .service-icon {
-  width: 72px;
-  height: 72px;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
-  color: var(--accent-color);
-  font-size: 34px;
-  margin-bottom: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease;
-}
-
-.services-3 .service-item .service-icon i {
-  line-height: 1;
-}
-
-.services-3 .service-item h3 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.services-3 .service-item h3 a {
-  color: var(--heading-color);
-  transition: color 0.3s ease;
-}
-
-.services-3 .service-item h3 a span {
-  display: inline-block;
-  color: var(--accent-color);
-}
-
-.services-3 .service-item h3 a:hover {
-  color: var(--accent-color);
-}
-
-.services-3 .service-item p {
-  color: var(--default-color);
-  margin-bottom: 0;
-  transition: color 0.3s ease;
-}
-
-.services-3 .service-item .card-action {
-  position: absolute;
-  right: 24px;
-  bottom: 24px;
-  width: 56px;
-  height: 56px;
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  font-size: 22px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-}
-
-.services-3 .service-item .card-action i {
-  transition: transform 0.3s ease;
-}
-
-.services-3 .service-item .card-action:hover i {
-  transform: rotate(45deg);
-}
-
-.services-3 .service-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 14px 30px color-mix(in srgb, var(--default-color), transparent 85%);
-}
-
-.services-3 .service-item:hover .service-icon {
-  transform: scale(1.1);
-}
-
-.services-3 .service-item:hover p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-.services-3 .service-item:hover .card-action {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-  .services-3 .service-item {
-    padding: 50px 25px 70px;
-  }
-
-  .services-3 .service-item h3 {
-    font-size: 22px;
-  }
-
-  .services-3 .service-item .service-icon {
-    width: 64px;
-    height: 64px;
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 768px) {
-  .services-3 {
-    padding: 70px 0 50px;
-  }
-}
-
-.services-3 .swiper-wrapper {
-  height: auto !important;
-}
 
 /*--------------------------------------------------------------
 # Portfolio 2 Section
