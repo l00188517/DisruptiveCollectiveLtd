@@ -44,7 +44,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#"  class="active">Price</a></li>
+          <li><a href="price.html">Price</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="services.html">Services</a></li>
           <li class="dropdown"><a href="career.html"><span>Career</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -64,7 +64,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#" class="active">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -81,54 +81,117 @@
 
   <main class="main">
 
-    <section id="error-404" class="error-404 section">
+    <!-- Contact 4 Section -->
+    <section id="contact" class="contact section">
+      
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info-panel">
+            <div class="contact-info-header">
+              <h3>Contact Information</h3>
+              <p>Get in touch. Your Direct Line to Digital Success.</p>
+            </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-    
-        <div class="error-wrapper">
-          <div class="row align-items-center">
-            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-              <div class="error-illustration">
-                <i class="bi bi-exclamation-triangle-fill"></i>
-                <div class="circle circle-1"></div>
-                <div class="circle circle-2"></div>
-                <div class="circle circle-3"></div>
+            <div class="contact-info-cards">
+              <div class="info-card">
+                <div class="icon-container">
+                  <i class="bi bi-pin-map-fill"></i>
+                </div>
+                <div class="card-content">
+                  <h4>Our Location</h4>
+                  <p>Lucan, Co. Dublin, Ireland</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="icon-container">
+                  <i class="bi bi-envelope-open"></i>
+                </div>
+                <div class="card-content">
+                  <h4>Email Us</h4>
+                  <p>info@DisruptiveCollective.com</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="icon-container">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="card-content">
+                  <h4>Call Us</h4>
+                  <p>+353 (857) 777-7476</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="icon-container">
+                  <i class="bi bi-clock-history"></i>
+                </div>
+                <div class="card-content">
+                  <h4>Working Hours</h4>
+                  <p><strong>Monday-Friday:</strong> 9AM - 7PM</p>
+                  <p><strong>Saturday:</strong> 10AM - 1PM</p>
+                </div>
               </div>
             </div>
-            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-              <div class="error-content">
-                <span class="error-badge" data-aos="zoom-in" data-aos-delay="400">Error</span>
-                <h1 class="error-code" data-aos="fade-up" data-aos-delay="500">404</h1>
-                <h2 class="error-title" data-aos="fade-up" data-aos-delay="600">Page Not Found</h2>
-                <p class="error-description" data-aos="fade-up" data-aos-delay="700">
-                  The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
-                </p>
-                
-                <div class="error-actions" data-aos="fade-up" data-aos-delay="800">
-                  <a href="index.html" class="btn-home">
-                    <i class="bi bi-house-door"></i> Back to Home
-                  </a>
-                  <a href="#" class="btn-help">
-                    <i class="bi bi-question-circle"></i> Help Center
-                  </a>
-                </div>
-                
-                <div class="error-suggestions" data-aos="fade-up" data-aos-delay="900">
-                  <h3>You might want to:</h3>
-                  <ul>
-                    <li><a href="#"><i class="bi bi-arrow-right-circle"></i> Check our sitemap</a></li>
-                    <li><a href="#"><i class="bi bi-arrow-right-circle"></i> Contact support</a></li>
-                    <li><a href="#"><i class="bi bi-arrow-right-circle"></i> Return to previous page</a></li>
-                  </ul>
-                </div>
+
+            <div class="social-links-panel">
+              <h5>Follow Us</h5>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
               </div>
             </div>
           </div>
+
+          <div class="contact-form-panel">
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14947.296210753255!2d-6.417916555139166!3d53.33952904706003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486772dfe4f62049%3A0x865749082def7caa!2sFonthill%20Retail%20Park!5e0!3m2!1sen!2sie!4v1751647854253!5m2!1sen!2sie" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="form-container">
+              <h3>Send Us a Message</h3>
+              <p>Get in touch. Let's Build Something Great Together.</p>
+
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="nameInput" name="name" placeholder="Full Name" required="">
+                  <label for="nameInput">Full Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="emailInput" name="email" placeholder="Email Address" required="">
+                  <label for="emailInput">Email Address</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="subjectInput" name="subject" placeholder="Subject" required="">
+                  <label for="subjectInput">Subject</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" id="messageInput" name="message" rows="5" placeholder="Your Message" style="height: 150px" required=""></textarea>
+                  <label for="messageInput">Your Message</label>
+                </div>
+
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+
+                <div class="d-grid">
+                  <button type="submit" class="btn-submit">Send Message <i class="bi bi-send-fill ms-2"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-    
       </div>
-    
-    </section>
+    </section><!-- /Contact 4 Section -->
 
 
   </main>
