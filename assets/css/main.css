@@ -1,6 +1,5 @@
 /*--------------------------------------------------------------
 # Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
@@ -10,6 +9,7 @@
 }
 
 /* blue 3b82f6 purple 8b5cf6 orange e87532 */
+/* https://www.youtube.com/watch?v=Y7f98aduVJ8 */
 /*Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
