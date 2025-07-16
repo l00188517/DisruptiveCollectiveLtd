@@ -9,7 +9,8 @@
   --nav-font: "Noto Sans",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* blue 3b82f6 purple 8b5cf6 orange e87532 */
+/*Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #0a0f14; /* Default color used for the majority of the text content across the entire website */
@@ -1489,7 +1490,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# Services Section  *******************************
 --------------------------------------------------------------*/
 .services {
   position: relative;
@@ -1792,15 +1793,15 @@ section,
 
 .services .cta-section .cta-card .btn-secondary {
   background: var(--surface-color);
-  color: var(--default-color);
-  border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  color: var(--accent-color);
+  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 80%);
 }
 
 .services .cta-section .cta-card .btn-secondary:hover {
-  border-color: color-mix(in srgb, var(--default-color), transparent 70%);
-  background: color-mix(in srgb, var(--default-color), transparent 95%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+  background: color-mix(in srgb, var(--accent-color), transparent 95%);
   transform: scale(1.05);
-  color: var(--default-color);
+  color: var(--accent-color);
 }
 
 @keyframes float {
@@ -1815,6 +1816,117 @@ section,
   }
 }
 
+/*--------------------------------------------------------------
+# button Call Of Action Section  *******************************
+--------------------------------------------------------------*/
+
+.btn-section .cta-section {
+  margin-top: 4rem;
+}
+
+.btn-section .cta-section .cta-card {
+  background: var(--surface-color);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  max-width: 64rem;
+  margin: 0 auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+@media (max-width: 768px) {
+  .btn-section .cta-section .cta-card {
+    padding: 2rem;
+  }
+}
+
+.btn-section .cta-section .cta-card h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .btn-section .cta-section .cta-card h3 {
+    font-size: 1.75rem;
+  }
+}
+
+.btn-section .cta-section .cta-card p {
+  font-size: 1.25rem;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin-bottom: 2rem;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-section .cta-section .cta-card .cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .btn-section .cta-section .cta-card .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.btn-section .cta-section .cta-card .btn-primary,
+.btn-section .cta-section .cta-card .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-section .cta-section .cta-card .btn-primary i,
+.btn-section .cta-section .cta-card .btn-secondary i {
+  margin-left: 0.5rem;
+}
+
+.btn-section .cta-section .cta-card .btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: white;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.btn-section .cta-section .cta-card .btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
+  color: white;
+}
+
+.btn-section .cta-section .cta-card .btn-secondary {
+  background: var(--surface-color);
+  color: var(--accent-color);
+  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+.btn-section .cta-section .cta-card .btn-secondary:hover {
+  border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  transform: scale(1.05);
+  color: var(--accent-color);
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(50%);
+  }
+
+  50% {
+    transform: translateY(-50%);
+  }
+}
 /*--------------------------------------------------------------
 # Services 2 Section
 --------------------------------------------------------------*/
