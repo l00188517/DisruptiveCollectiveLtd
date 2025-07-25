@@ -1490,6 +1490,75 @@ section,
 }
 
 /*--------------------------------------------------------------
+# plans Section
+--------------------------------------------------------------*/
+.plans {
+  padding: 80px 0;
+}
+
+.plans .servies-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.plans .btn-outline-primary {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.plans .btn-outline-primary:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.plans .service-item {
+  background-color: var(--surface-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.plans .service-item:hover {
+  transform: scale(1.05);
+}
+
+.plans .service-item i {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.plans .service-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.plans .service-item h3 a {
+  color: var(--heading-color);
+}
+
+.plans .service-item h3 a:hover {
+  color: var(--accent-color);
+}
+
+.plans .service-item p {
+  font-size: 0.9rem;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+@media (max-width: 991px) {
+  .plans h2 {
+    font-size: 2rem;
+  }
+}
+
+/*--------------------------------------------------------------
 # Services Section  *******************************
 --------------------------------------------------------------*/
 .services {
