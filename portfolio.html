@@ -81,54 +81,162 @@
 
   <main class="main">
 
-    <section id="error-404" class="error-404 section">
+    <!-- Portfolio 2 Section -->
+    <section id="portfolio-2" class="portfolio-2 section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Case Studies</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p>
+      </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-    
-        <div class="error-wrapper">
-          <div class="row align-items-center">
-            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-              <div class="error-illustration">
-                <i class="bi bi-exclamation-triangle-fill"></i>
-                <div class="circle circle-1"></div>
-                <div class="circle circle-2"></div>
-                <div class="circle circle-3"></div>
-              </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-              <div class="error-content">
-                <span class="error-badge" data-aos="zoom-in" data-aos-delay="400">Error</span>
-                <h1 class="error-code" data-aos="fade-up" data-aos-delay="500">404</h1>
-                <h2 class="error-title" data-aos="fade-up" data-aos-delay="600">Page Not Found</h2>
-                <p class="error-description" data-aos="fade-up" data-aos-delay="700">
-                  The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
-                </p>
-                
-                <div class="error-actions" data-aos="fade-up" data-aos-delay="800">
-                  <a href="index.html" class="btn-home">
-                    <i class="bi bi-house-door"></i> Back to Home
-                  </a>
-                  <a href="#" class="btn-help">
-                    <i class="bi bi-question-circle"></i> Help Center
-                  </a>
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-strategy">Strategy</li>
+            <li data-filter=".filter-finance">Finance</li>
+            <li data-filter=".filter-operations">Operations</li>
+            <li data-filter=".filter-technology">Technology</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Portfolio Item" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
                 </div>
-                
-                <div class="error-suggestions" data-aos="fade-up" data-aos-delay="900">
-                  <h3>You might want to:</h3>
-                  <ul>
-                    <li><a href="#"><i class="bi bi-arrow-right-circle"></i> Check our sitemap</a></li>
-                    <li><a href="#"><i class="bi bi-arrow-right-circle"></i> Contact support</a></li>
-                    <li><a href="#"><i class="bi bi-arrow-right-circle"></i> Return to previous page</a></li>
-                  </ul>
+                <div class="portfolio-info">
+                  <h4>Business Growth Strategy</h4>
+                  <p>Strategic Planning</p>
+                  <div class="portfolio-tags">
+                    <span>Strategy</span>
+                    <span>Consulting</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/portfolio-2.webp" alt="Portfolio Item" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Financial Restructuring</h4>
+                  <p>Financial Advisory</p>
+                  <div class="portfolio-tags">
+                    <span>Finance</span>
+                    <span>Investment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-operations">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/portfolio-3.webp" alt="Portfolio Item" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Supply Chain Optimization</h4>
+                  <p>Operations Management</p>
+                  <div class="portfolio-tags">
+                    <span>Operations</span>
+                    <span>Logistics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-technology">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/portfolio-4.webp" alt="Portfolio Item" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Digital Transformation</h4>
+                  <p>Technology Consulting</p>
+                  <div class="portfolio-tags">
+                    <span>Technology</span>
+                    <span>Innovation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/portfolio-5.webp" alt="Portfolio Item" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Market Expansion</h4>
+                  <p>Strategic Planning</p>
+                  <div class="portfolio-tags">
+                    <span>Strategy</span>
+                    <span>Growth</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img src="assets/img/portfolio/portfolio-6.webp" alt="Portfolio Item" class="img-fluid">
+                  <div class="portfolio-overlay">
+                    <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Investment Strategy</h4>
+                  <p>Financial Advisory</p>
+                  <div class="portfolio-tags">
+                    <span>Finance</span>
+                    <span>Investment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Portfolio Items Container -->
+
         </div>
-    
+
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+          <a href="#portfolio" class="btn btn-primary">View All Case Studies</a>
+        </div>
+
       </div>
-    
-    </section>
+
+    </section><!-- /Portfolio 2 Section -->
 
 
   </main>
