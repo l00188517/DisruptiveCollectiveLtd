@@ -3521,6 +3521,465 @@ section,
 }
 
 /*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about {
+  padding-top: 60px;
+  background-color: var(--background-color);
+  padding-bottom: 20px;
+}
+
+.about .content h2 {
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.3;
+  color: var(--heading-color);
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 768px) {
+  .about .content h2 {
+    font-size: 2rem;
+  }
+}
+
+.about .content p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--default-color);
+  margin-bottom: 2rem;
+}
+
+.about .content p.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+  margin-bottom: 2.5rem;
+}
+
+.about .stats-wrapper {
+  display: flex;
+  gap: 3rem;
+  margin: 3rem 0;
+  padding: 2.5rem 0;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+@media (max-width: 576px) {
+  .about .stats-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+}
+
+.about .stats-wrapper .stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.about .stats-wrapper .stat-item .number {
+  font-size: 3rem;
+  font-weight: 200;
+  color: var(--accent-color);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.about .stats-wrapper .stat-item .label {
+  font-size: 0.875rem;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.about .cta-wrapper {
+  margin-top: 2.5rem;
+}
+
+.about .cta-wrapper .btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.about .cta-wrapper .btn-link i {
+  transition: transform 0.3s ease;
+}
+
+.about .cta-wrapper .btn-link:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.about .cta-wrapper .btn-link:hover i {
+  transform: translateX(4px);
+}
+
+.about .image-wrapper {
+  position: relative;
+  padding-left: 2rem;
+}
+
+@media (max-width: 992px) {
+  .about .image-wrapper {
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+}
+
+.about .image-wrapper img {
+  border-radius: 8px;
+  box-shadow: 0 20px 60px color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.about .image-wrapper .floating-element {
+  position: absolute;
+  bottom: 2rem;
+  left: -2rem;
+  background-color: var(--surface-color);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 320px;
+  box-shadow: 0 20px 60px color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+@media (max-width: 992px) {
+  .about .image-wrapper .floating-element {
+    position: static;
+    margin-top: 2rem;
+    max-width: none;
+  }
+}
+
+.about .image-wrapper .floating-element .quote-content blockquote {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--default-color);
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.about .image-wrapper .floating-element .quote-content cite {
+  font-size: 0.875rem;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .about {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    padding: 60px 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Call Us Section
+--------------------------------------------------------------*/
+.call-us {
+  padding: 0;
+}
+
+.call-us .container {
+  padding: 80px;
+  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  border-radius: 15px;
+}
+
+@media (max-width: 992px) {
+  .call-us .container {
+    padding: 60px;
+  }
+}
+
+.call-us .content h3 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.call-us .content h3 em {
+  font-style: normal;
+  position: relative;
+  z-index: 1;
+}
+
+.call-us .content h3 em:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  height: 10px;
+  background: color-mix(in srgb, var(--accent-color), transparent 30%);
+  z-index: -1;
+}
+
+.call-us .content p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.call-us .content .cta-btn {
+  color: var(--contrast-color);
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 10px;
+  background: var(--accent-color);
+}
+
+.call-us .content .cta-btn:hover {
+  background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
+}
+
+.call-us .img {
+  position: relative;
+}
+
+.call-us .img:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: color-mix(in srgb, var(--contrast-color), transparent 20%);
+  border-radius: 15px;
+  transform: rotate(6deg);
+  z-index: 2;
+}
+
+.call-us .img:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: color-mix(in srgb, var(--default-color), transparent 95%);
+  border-radius: 15px;
+  transform: rotate(12deg);
+  z-index: 1;
+}
+
+.call-us .img img {
+  position: relative;
+  z-index: 3;
+  border-radius: 15px;
+  z-index: 3;
+}
+
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.team .member-card {
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.team .member-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px color-mix(in srgb, var(--default-color), transparent 92%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
+.team .member-card:hover .member-media .social-list {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.team .member-card .member-media {
+  position: relative;
+  aspect-ratio: 1/1;
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+}
+
+.team .member-card .member-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.team .member-card .member-media .social-list {
+  list-style: none;
+  position: absolute;
+  inset-inline: 12px;
+  bottom: 12px;
+  display: flex;
+  gap: 10px;
+  background: color-mix(in srgb, var(--background-color), var(--accent-color) 6%);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  backdrop-filter: blur(4px);
+  border-radius: 999px;
+  padding: 8px 10px;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.team .member-card .member-media .social-list a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--default-color);
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.team .member-card .member-media .social-list a:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 30%);
+  transform: translateY(-2px);
+}
+
+.team .member-card .member-content {
+  padding: 18px 18px 22px;
+}
+
+.team .member-card .member-content .member-name {
+  font-size: 1.05rem;
+  margin: 0 0 4px 0;
+}
+
+.team .member-card .member-content .member-role {
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+}
+
+.team .member-card .member-content .member-bio {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--default-color), transparent 18%);
+}
+
+.team .team-highlight {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 92%) 0%, color-mix(in srgb, var(--accent-color), transparent 96%) 100%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  border-radius: 14px;
+  padding: 22px 22px;
+}
+
+.team .team-highlight .icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  margin-right: 14px;
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+.team .team-highlight .icon-wrap i {
+  font-size: 1.25rem;
+}
+
+.team .team-highlight .title {
+  margin: 0 0 6px 0;
+  font-size: 1.1rem;
+}
+
+.team .team-highlight .desc {
+  color: color-mix(in srgb, var(--default-color), transparent 18%);
+}
+
+.team .join-card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: radial-gradient(1200px 300px at 20% -10%, color-mix(in srgb, var(--accent-color), transparent 82%), transparent 60%), radial-gradient(900px 300px at 120% 110%, color-mix(in srgb, var(--accent-color), transparent 86%), transparent 60%), var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  display: flex;
+}
+
+.team .join-card .join-content {
+  padding: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.team .join-card .join-content p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.team .join-card .join-content .btn-join {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 25%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.team .join-card .join-content .btn-join:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px color-mix(in srgb, var(--accent-color), transparent 70%);
+  background: color-mix(in srgb, var(--accent-color), white 10%);
+  color: var(--contrast-color);
+}
+
+.team .swiper-wrapper {
+  height: auto !important;
+}
+
+@media (max-width: 992px) {
+  .team .team-highlight .icon-wrap {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team .member-card .member-content {
+    padding: 16px;
+  }
+
+  .team .member-card .member-content .member-bio {
+    font-size: 0.9rem;
+  }
+
+  .team .join-card .join-content {
+    padding: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Error 404 Section
 --------------------------------------------------------------*/
 .error-404 {
