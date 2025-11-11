@@ -79,7 +79,7 @@
               Let's build your success together.
             </p>
             <div class="hero-cta">
-              <a href="#" class="btn-get-started">Get Started</a>
+              <button class="btn-get-started myBtn">Get Started</button>
               <a href="#" class="btn-watch-video glightbox">
                 <i class="bi bi-play-circle"></i>
                 <span>Watch Demo</span>
@@ -205,10 +205,10 @@
           <div class="row cta-section">
             <div class="col-12 cta-card text-center" data-aos="fade-up">
               <div class="cta-buttons">
-                <a href="#" class="btn-primary" id="consultation-trigger"  onclick="Calendly.initPopupWidget({url: 'https://calendar.google.com/calendar/appointments/AcZssZ0QbGBvcCN5fcLhW_CXdCLA6kmD7zcuG8FqaN0=?gv=true'});return false;" >
+                <!-- Trigger/Open The Modal -->
+                <button class="btn-primary myBtn">
                   Schedule a Free Consultation <i class="bi bi-arrow-right"></i>
-                </a>
-
+                </button>
                 <a href="portfolio.html" class="btn-secondary">
                   View Our Work
                 </a>
@@ -387,9 +387,9 @@
           <div class="row cta-section">
             <div class="col-12 cta-card text-center" data-aos="fade-up">
               <div class="cta-buttons">
-                <a href="#" class="btn-primary">
+                <button class="btn-primary myBtn">
                   Schedule a Free Consultation <i class="bi bi-arrow-right"></i>
-                </a>
+                </button>
                 <a href="portfolio.html" class="btn-secondary">
                   View Our Work
                 </a>
@@ -523,9 +523,9 @@
               Let's discuss your vision and craft the digital future your business deserves.
             </p>
             <div class="cta-buttons">
-              <a href="#" class="btn-primary">
+              <button class="btn-primary myBtn">
                 Schedule a Free Consultation <i class="bi bi-arrow-right"></i>
-              </a>
+              </button>
               <a href="portfolio.html" class="btn-secondary">
                 View Our Work
               </a>
@@ -773,6 +773,22 @@
         </div -->
       </div>
     </section><!-- /Testimonials 2 Section -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal-one">
+
+      <!-- Modal content -->
+      <div class="modal-content-one">
+        <span class="close">&times;</span>
+        <div class="modal-body-one">
+          <!-- Google Calendar Appointment Scheduling begin -->
+          <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3q7H2OH-J3XmBas-YWSP33IIfCHwOT1_IvBbxAoY2-7gL3Uxl2o7ymCFnxwCWtWr706G_pPZN8?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+          <!-- end Google Calendar Appointment Scheduling -->
+        </div>
+        
+      </div>
+
+    </div>
 
   </main>
 
