@@ -4245,7 +4245,7 @@ section,
 # Modal popup Section
 --------------------------------------------------------------*/
 
-.myBtn{
+.myBtn, .myBtnIgnite, .myBtnAccelerate, .myBtnEnterprise {
   border: #000 solid 0px;
 }
 /* The Modal (background) */
